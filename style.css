@@ -1,0 +1,110 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#app {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+
+#story-display {
+    margin-bottom: 20px;
+}
+
+.story-part {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+}
+
+
+button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #1E90FF;
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #FF69B4;
+    transform: scale(1.05);
+}
+
+/* Sekce nastavení */
+#setup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #1E90FF;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #FF69B4;
+}
+
+/* Nadpisy sekcí ve formuláři */
+label {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+    display: block;
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Prostor mezi formulářem a tlačítky */
+#setup-buttons {
+    margin-top: 20px;
+}
+
+/* Skrytí sekcí při přepínání mezi stránkami */
+.hidden {
+    display: none;
+}
+
+textarea {
+    border-radius: 5px;
+    
+}

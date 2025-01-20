@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <title>Deník cílů</title>
+</head>
+<body>
+    <div id="app">
+        <div id="setupPage" class="hidden">
+            <u><h1>Deník cílů</h1></u>
+            <h2><label for="kratke">Krátkodobé (do 1 měsíce)</label></h2>
+            <textarea id="kratke"></textarea>
+
+            <h2><label for="stredni">Střednědobé (do 1 roku)</label></h2>
+            <textarea id="stredni"></textarea>
+
+            <h2><label for="dlouhe">Dlouhodobé (do 5 let)</label></h2>
+            <textarea id="dlouhe"></textarea>
+
+            <div>
+                <button id="saveDenik">Uložit deník</button>
+            </div>
+        </div>
+
+        <div id="indexPage">
+            <u><h1>Tvoje cíle</h1></u>
+            <div id="denikDisplay">
+                <h2>Krátkodobé</h2>
+                <p id="kratkodobe"></p>
+
+                <h2>Střednědobé</h2>
+                <p id="strednedobe"></p>
+
+                <h2>Dlouhodobé</h2>
+                <p id="dlouhodobe"></p>
+            </div>
+            <button id="editDenik">Upravit deník</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
